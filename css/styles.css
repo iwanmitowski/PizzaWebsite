@@ -1,93 +1,143 @@
 /* This Palette ?: https://icolorpalette.com/imagepalette/dish_pizza_cuisine-2 */
 
-*{
-    margin:0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-html{
-    font-family: 'Itim';
-    scroll-behavior: smooth;
+html {
+  font-family: "Itim";
+  scroll-behavior: smooth;
 }
 
-body{
-    background-color: whitesmoke;
+body {
+  background-color: whitesmoke;
 }
 
 /* Header settings */
 
-
-#header-image{
-    background-image: url(../images/header-image.jpg);
-    background-size:cover;
-    background-position:top center;
-    background-position: 58% 0;
-    background-repeat: no-repeat;
-    height: 100vh;
+#header-image {
+  background-image: url(../images/header-image.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-position: 58% 0;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
-#header-headings{
-    float: right;
-    color:#111;
-    text-align: right;
-    margin-top:490px;
-    font-size: 1.3em;
-    padding-right: 30px;
+#header-headings {
+  float: right;
+  color: #111;
+  text-align: right;
+  margin-top: 490px;
+  font-size: 1.3em;
+  padding-right: 30px;
 }
-
 
 /* Nav settings */
 
-
-.main-nav{
-    text-align: center;
-    z-index: 5;
+.main-nav {
+  text-align: center;
+  z-index: 5;
 }
 
-.main-nav ul{
-    padding: 10px;
-    padding-top: 25px;
-    background-color:#d4a07f;
+.main-nav ul {
+  padding: 10px;
+  padding-top: 25px;
+  background-color: #d4a07f;
 }
 
-.main-nav ul li{
-    list-style-type: none;
-    border-radius: 15px;
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    padding:15px;
-    background-color: #ebedef;
-    box-shadow: 1px 1px 5px #000;
+.main-nav ul li {
+  list-style-type: none;
+  border-radius: 15px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #ebedef;
+  box-shadow: 1px 1px 5px #000;
 }
 
-.main-nav ul li a{
-    color: rgb(2, 75, 2);
-    font-size: 1.3em;
-    display: block;
-    text-decoration: none;
+.main-nav ul li a {
+  color: rgb(2, 75, 2);
+  font-size: 1.3em;
+  display: block;
+  text-decoration: none;
+}
+
+.mobile-pizza-menu {
+  background: #ececec;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pizza {
+  flex: 1 0 300px;
+  margin: 20px 20px;
+  border: 1px solid black;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.pizza-box {
+  margin: 0 15px 10px;
+}
+
+.pizza-image {
+  width: 100%;
+  background: salmon;
+}
+.mobile-pizza-header {
+  text-align: center;
+  font-size: 1.45em;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.size-button-container {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.size-button {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+
+  font-size: 1.05em;
+  border-radius: 100px;
+  /* padding: 20px; */
+  margin: 0 10px;
+}
+
+.order-button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-size: 1.2em;
 }
 
 /* May be red with white on hover ?! */
 
-
 /* Footer Settings */
-body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-footer{
-    background-color:#d4a07f;
-    text-align: center;
+footer {
+  background-color: #d4a07f;
+  text-align: center;
 }
 
-#footer-credits-section{
-    padding: 10px;
+#footer-credits-section {
+  padding: 10px;
 }
 
-footer p{
-    padding: 5px;
-    text-align: center;
-    font-size: 17px;
-    color:rgb(2, 75, 2);
+footer p {
+  padding: 5px;
+  text-align: center;
+  font-size: 17px;
+  color: rgb(2, 75, 2);
 }
