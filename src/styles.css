@@ -20,14 +20,19 @@ body{
 #header-image{
     background-image: url(images/header-image.jpg);
     background-size:cover;
-    background-position:top center ;
+    background-position:top center;
+    background-position: 58% 0;
     background-repeat: no-repeat;
     height: 100vh;
 }
 
 #header-headings{
     float: right;
-    color:#5d5f64;
+    color:#111;
+    text-align: right;
+    margin-top:490px;
+    font-size: 1.3em;
+    padding-right: 30px;
 }
 
 
@@ -67,7 +72,9 @@ body{
 
 
 /* Footer Settings */
-
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 footer{
     background-color:#d4a07f;
