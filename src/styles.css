@@ -1,3 +1,86 @@
+/* This Palette ?: https://icolorpalette.com/imagepalette/dish_pizza_cuisine-2 */
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Itim';
+    scroll-behavior: smooth;
+}
+
 body{
-    font-family: 'Roboto';
+    background-color: whitesmoke;
+}
+
+/* Header settings */
+
+
+#header-image{
+    background-image: url(images/header-image.jpg);
+    background-size:cover;
+    background-position:top center ;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#header-headings{
+    float: right;
+    color:#5d5f64;
+}
+
+
+/* Nav settings */
+
+
+.main-nav{
+    text-align: center;
+    z-index: 5;
+}
+
+.main-nav ul{
+    padding: 10px;
+    padding-top: 25px;
+    background-color:#d4a07f;
+}
+
+.main-nav ul li{
+    list-style-type: none;
+    border-radius: 15px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding:15px;
+    background-color: #ebedef;
+    box-shadow: 1px 1px 5px #000;
+}
+
+.main-nav ul li a{
+    color: rgb(2, 75, 2);
+    font-size: 1.3em;
+    display: block;
+    text-decoration: none;
+}
+
+/* May be red with white on hover ?! */
+
+
+/* Footer Settings */
+
+
+footer{
+    background-color:#d4a07f;
+    text-align: center;
+}
+
+#footer-credits-section{
+    padding: 10px;
+}
+
+footer p{
+    padding: 5px;
+    text-align: center;
+    font-size: 17px;
+    color:rgb(2, 75, 2);
 }
