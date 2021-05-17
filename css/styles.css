@@ -101,11 +101,10 @@ body {
   text-align: center;
 }
 
-.size-button {
+.size-button, .servings-button {
   display: inline-block;
   height: 40px;
   width: 40px;
-
   font-size: 1.05em;
   border-radius: 100px;
   /* padding: 20px; */
