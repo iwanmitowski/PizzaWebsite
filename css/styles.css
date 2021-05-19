@@ -11,7 +11,9 @@ html {
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: #ebedef;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* Header settings */
@@ -29,9 +31,13 @@ body {
   float: right;
   color: #111;
   text-align: right;
-  margin-top: 490px;
+  margin-top: 420px;
   font-size: 1.3em;
   padding-right: 30px;
+}
+
+#header-headings h1:last-of-type{
+  margin-bottom: 25px;
 }
 
 /* Nav settings */
@@ -63,6 +69,15 @@ body {
   font-size: 1.3em;
   display: block;
   text-decoration: none;
+}
+
+.new-offer{
+  margin:30px auto 15px;
+  text-align: center;
+}
+
+.new-offer img{
+  width: 80%; 
 }
 
 /* Menu settings */
@@ -114,20 +129,81 @@ body {
 
 .order-button {
   display: block;
-  margin: 20px auto 0;
+  margin: 25px auto 15px;
   padding: 10px 25px;
   text-transform: uppercase;
   font-size: 1.2em;
   cursor: pointer;
 }
 
-/* Footer Settings */
+/*Contacts Settings*/
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+.info-container{
+  text-align: center;
 }
 
+form, .info-container{
+  width: 70%;
+  margin: 40px auto;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+form label,.info-article h3{
+  font-size: 1.5em;
+  color:rgb(2, 75, 2);
+}
+
+.info-article{
+  margin-bottom: 10px;
+}
+
+.info-article h3{
+  font-weight: normal;
+}
+
+.info-article h3 i{
+  size:2;
+  margin-right: 10px;
+}
+
+form input[type=text], select, input[type=date],input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+form textarea{
+  resize: vertical;
+  min-height: 100px;
+  max-height: 300px;
+}
+
+form input[type=submit] {
+  background-color: #fff;
+  color: rgb(2, 75, 2);
+  border: 1px solid rgb(148, 148, 148);
+  border-radius: 4px;
+  
+
+  margin: 20px 0;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.map iframe{
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+/* Footer Settings */
 footer {
   background-color: #d4a07f;
   text-align: center;
@@ -141,5 +217,5 @@ footer p {
   padding: 5px;
   text-align: center;
   font-size: 17px;
-  color: rgb(2, 75, 2);
+  color: #111;
 }

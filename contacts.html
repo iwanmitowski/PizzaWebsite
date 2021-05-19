@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/site-icon.png" type="image/gif" sizes="16x16">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/1178c1936b.js" crossorigin="anonymous"></script>
+    <script src="js/javascript.js"></script>
+    <title>При Голев</title>
+</head>
+
+<body>
+    <header class="main-header" id="header-image">
+        <div id="header-headings">
+            <h1>Пицария</h1>
+            <h1>При Голев</h1>
+            <h2>Контакти</h2>
+        </div>
+    </header>
+
+    <main>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="#">Количка</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+        
+        <section class="info-container">
+            <article class="info-article">
+                <h3><i class="fas fa-map-marker-alt fa-sm"></i>Адрес</h3>
+                <p>гр. Пловдив, бул. "България" 236</p>
+            </article>
+            <article class="info-article">
+                <h3><i class="fas fa-mobile-alt fa-sm"></i>За обратна връзка</h3>
+                <p>032-261-800</p>
+            </article>
+            <article class="info-article">
+                <h3><i class="far fa-envelope fa-sm"></i>Е-mail</h3>
+                <p>angel.golev@fmi-plovdiv.org</p>
+                <p>To-do с нашите</p>
+                <p>To-do с нашите</p>
+            </article>
+            <article class="info-article">
+                <h3><i class="far fa-clock fa-sm"></i>Работно време</h3>
+                <p>Всеки ден от 8:00 до 23:00</p>
+            </article>
+        </section>
+        <section class="form-container">
+            <form method="POST">
+                <label for="fName">Име</label>
+                <input type="text" name="name" placeholder="Име" required id="fName">
+
+                <label for="fSurname">Фамилия</label>
+                <input type="text" name="surname" placeholder="Фамилия" required id="fSurname">
+
+                <label for="fEmail">E-mail</label>
+                <input type="email" name="email" placeholder="примерен-email@email.com" required id="fEmail">
+                
+                <textarea name="asking" placeholder="Допълнително запитване..."></textarea>
+                <input type="submit" value="Изпрати" onclick="Validate()">
+
+            </form>
+        </section>
+        <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2957.645949137463!2d24.711525251181673!3d42.157862655736736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14acce20719cf3e1%3A0x614581f6f00d030d!2z0J_QoyDQvdC-0LLQsCDRgdCz0YDQsNC00LA!5e0!3m2!1sbg!2sbg!4v1621425793365!5m2!1sbg!2sbg" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <!-- При голям екран да се центрира и да е като контакт форма-та със зелен background-->
+
+        <footer>
+            <section id="footer-credits-section">
+                <p>Красимир Неделчев & Иван Митовски</p>
+                <p>&copy; Всички права запазени</p>
+            </section>
+        </footer>
+</body>
+
+</html>
