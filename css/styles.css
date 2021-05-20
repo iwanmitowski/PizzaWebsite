@@ -104,11 +104,16 @@ body {
   width: 100%;
   background: rgb(255, 155, 144);
 }
+
 .mobile-pizza-header {
   text-align: center;
   font-size: 1.45em;
   font-weight: bold;
   margin: 5px 0;
+}
+
+.mobile-pizza-ingredients{
+  text-align: center;
 }
 
 .size-button-container {
