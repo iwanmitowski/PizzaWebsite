@@ -167,7 +167,7 @@ form label,.info-article h3{
   margin-right: 10px;
 }
 
-form input[type=text], select, input[type=date],input[type=email], textarea {
+form input[type=text], select, input[type=date],input[type=email],input[type="tel"], textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
