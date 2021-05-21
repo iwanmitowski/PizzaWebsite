@@ -33,28 +33,44 @@
         </nav>
 
         <section class="pizza-carousel-menu">
-            <div class="carousel-pizza-name">
-                <h1>Голев специална</h1>
+            <div>
+                <h1 class="carousel-pizza-name">Голев специална</h1>
             </div>
             <div class="carousel-pizza-ingredients">
                 <h2>Съставки</h2>
                 <p id="carousel-pizza-ingredients-text">Доматен сос, гъби, пражка шунка, лук, чушки, кашкавал, чубрица</p>
             </div>
-            <div class="carousel-pizza-servings">
-                <h2>Брой</h2>
-                <button class="servings-button">-</button> 
-                <p>01</p>
-                <button class="servings-button">+</button> 
-            </div>
-            <div class="carousel-pizza-price">
-                <h2>Цена</h2>
-                <p id="pizza-pricing">6.00</p>
-            </div>
-            <button id="add-to-cart-button">Добави в количката</button> 
-            <div class="carousel-pizzas">
-                <div class="carousel-pizza-directions">
-                    <!-- to-do ?! -->
+
+            <div class="size-button-container">
+                <button class="size-button">S</button>
+                <button class="size-button">M</button>
+                <button class="size-button">L</button>
+            </div>    
+            <div class="carousel-price-and-servings-container">
+                <div class="carousel-pizza-servings">
+                    <h2>Брой</h2>
+                    <div class=carousel-pizza-buttons-container>
+                        <button class="servings-button">-</button> 
+                        <p>01</p>
+                        <button class="servings-button">+</button>
+                    </div>
                 </div>
+    
+                <div class="carousel-pizza-price">
+                    <h2>Цена</h2>
+                    <p id="pizza-pricing">6.00</p>
+                </div>
+            </div>
+            
+            <button class="order-button" id="carousel-order-button">Добави <i class="fas fa-shopping-cart"></i></button> 
+
+            <div class="carousel-pizza-directions">
+                <div id="left-arrow"><i class="fas fa-arrow-left"></i></div>
+                <div id="right-arrow"><i class="fas fa-arrow-right"></i></div>
+            </div>
+            <!-- TO STYLE -->
+            <div class="carousel-pizzas">
+               
                 <figure>
                     <img src="images/pizzas//sm/golev_specialna.png">
                     <img src="images/pizzas//sm/american_hot.png">

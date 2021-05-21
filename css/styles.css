@@ -119,6 +119,7 @@ body {
 .size-button-container {
   margin: 10px auto;
   text-align: center;
+  margin:0 auto;
 }
 
 .size-button, .servings-button {
@@ -127,7 +128,6 @@ body {
   width: 40px;
   font-size: 1.05em;
   border-radius: 100px;
-  /* padding: 20px; */
   margin: 0 10px;
   cursor: pointer;
 }
@@ -141,6 +141,63 @@ body {
   cursor: pointer;
 }
 
+.pizza-carousel-menu{
+  margin:0 auto;
+  padding-top: 30px;
+}
+
+.carousel-pizza-name{
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.carousel-pizza-ingredients{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.carousel-price-and-servings-container{
+  text-align: center;
+  display: flex;
+  justify-content:space-around;
+}
+
+.carousel-pizza-buttons-container button, p{
+  display: inline-block;
+}
+
+.carousel-pizza-directions{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.carousel-pizza-directions div{
+  margin-bottom: 10px;
+}
+
+.carousel-pizzas img{
+  width: 30%;
+}
+
+.carousel-pizzas figure {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.carousel-pizzas figure img{
+  flex: 1 0 30%;
+}
+
+
+
+#carousel-order-button{
+  border-radius: 60px;
+}
+
+.carousel-pizza-ingredients{
+  justify-content: flex-end;
+}
 /*Contacts Settings*/
 
 .info-container{
@@ -193,8 +250,6 @@ form input[type=submit] {
   color: rgb(2, 75, 2);
   border: 1px solid rgb(148, 148, 148);
   border-radius: 4px;
-  
-
   margin: 20px 0;
   padding: 10px 25px;
   text-transform: uppercase;
@@ -209,6 +264,7 @@ form input[type=submit] {
 }
 
 /* Footer Settings */
+
 footer {
   background-color: #d4a07f;
   text-align: center;
