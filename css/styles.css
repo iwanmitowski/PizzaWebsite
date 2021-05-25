@@ -80,6 +80,31 @@ body {
   width: 80%; 
 }
 
+/* Review Card Settings */
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.card{
+  flex: 1 0 300px;
+  margin: 30px;
+}
+
+.card .card-img img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.card .card-name, .card-description{
+  margin-bottom: 10px;
+}
+
 /* Menu settings */
 
 .mobile-pizza-menu {
@@ -189,8 +214,6 @@ body {
   flex: 1 0 30%;
 }
 
-
-
 #carousel-order-button{
   border-radius: 60px;
 }
@@ -198,6 +221,7 @@ body {
 .carousel-pizza-ingredients{
   justify-content: flex-end;
 }
+
 /*Contacts Settings*/
 
 .info-container{
