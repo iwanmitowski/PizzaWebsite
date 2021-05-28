@@ -40,36 +40,72 @@ body {
   margin-bottom: 25px;
 }
 
-/* Nav settings */
+/* Desktop Nav settings */
+
+.desktop-nav{
+  display: flex;
+  justify-content: space-between; 
+  position: sticky;
+  top: 0px;
+  background-color: rgb(255,255,255);
+  display: none;
+  /* DISPLAY FLEX DESKTOP */
+}
+
+.desktop-nav .logo img{
+  padding: 15px 20px;
+  width:48px;
+  height: 48px;
+}
 
 .main-nav {
   text-align: center;
-  z-index: 5;
 }
 
 .main-nav ul {
-  padding: 10px;
-  padding-top: 25px;
-  background-color: #d4a07f;
+  margin: 15px 20px;
+  list-style-type: none;
 }
 
 .main-nav ul li {
-  list-style-type: none;
-  border-radius: 15px;
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  padding: 15px;
-  background-color: #ebedef;
-  box-shadow: 1px 1px 5px #000;
+  display:inline-flex;
 }
 
 .main-nav ul li a {
   color: rgb(2, 75, 2);
   font-size: 1.3em;
+  padding: 10px 15px;
   display: block;
   text-decoration: none;
 }
+
+.main-nav ul li:hover{
+  color:rgb(2, 75, 2);
+}
+
+.main-nav ul li a:hover{
+  color:inherit;
+  border-bottom: 1px solid;
+    margin-bottom: -1px;
+}
+
+#cart{
+  color:white;
+  background-color: #BE1E2D;
+  margin-left: 20px;
+  border-radius: 3px;
+
+}
+
+#cart:hover{
+  background-color: #BE1E2D;
+  border-radius: 10px;
+}
+
+/* Mobile Nav Settings */
+
+
+
 
 .new-offer{
   margin:30px auto 15px;
