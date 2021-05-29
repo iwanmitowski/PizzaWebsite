@@ -12,8 +12,7 @@ html {
 
 body {
   background-color: #ebedef;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 /* Header settings */
@@ -31,9 +30,10 @@ body {
   float: right;
   color: #111;
   text-align: right;
-  margin-top: 420px;
+  padding-top: 80%;
   font-size: 1.3em;
   padding-right: 30px;
+  font-family: 'Pacifico', cursive;
 }
 
 #header-headings h1:last-of-type{
@@ -321,11 +321,12 @@ body {
 .card{
   flex: 1 0 300px;
   margin: 30px;
+  padding:15px;
 }
 
 .card .card-img img{
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin-bottom: 20px;
   object-fit: cover;
@@ -333,6 +334,22 @@ body {
 
 .card .card-name, .card-description{
   margin-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.card-rating{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 1.2em;
+  transform: translateX(-50%);
+  padding-top: 15px;
+}
+
+.card-name{
+  font-size: 1.5em;
 }
 
 /* Menu settings */
@@ -388,7 +405,7 @@ body {
   cursor: pointer;
 }
 
-.order-button {
+.order-button{
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -525,11 +542,12 @@ form input[type=submit] {
 /* Footer Settings */
 
 footer {
-  background-color: #d4a07f;
+  background-color: #BE1E2D;
   text-align: center;
+  margin:0;
 }
 
-#footer-credits-section {
+.footer-credits-section{
   padding: 10px;
 }
 
@@ -537,5 +555,6 @@ footer p {
   padding: 5px;
   text-align: center;
   font-size: 17px;
-  color: #111;
+  color:white;
+  margin: 0;
 }
