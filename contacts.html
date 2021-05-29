@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link type="text/css" rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/site-icon.png" type="image/gif" sizes="16x16">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -34,6 +38,38 @@
                 <li><a href="contacts.html">Контакти</a></li>
                 <li><a href="#" id="cart">Количка <i class="fas fa-shopping-cart"></i></a></li>
             </ul>
+        </nav>
+    </div>
+    <div class="mobile-nav">
+        <nav class="navbar navbar-dark yellow lighten-1 mb-4">
+            <a href="index.html">
+                <img src="images/site-icon.png" class="mobile-logo">
+            </a>
+            <!-- Collapse button -->
+            <button class="navbar-toggler second-button" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent23" aria-controls="navbarSupportedContent23" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
+            </button>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent23">
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Начало</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link">Меню</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="contacts.html" class="nav-link">Контакти<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="mobile-cart">Количка <i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+                <!-- Links -->
+            </div>
         </nav>
     </div>
     <main>
