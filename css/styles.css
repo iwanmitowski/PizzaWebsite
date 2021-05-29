@@ -15,6 +15,13 @@ body {
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
+main{
+  /* background-image: url(../images/background-whitewood.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* Header settings */
 
 #header-image {
@@ -103,6 +110,10 @@ body {
 }
 
 /* Mobile Nav Settings */
+
+.mobile-nav div ul{
+  padding-top: 15px;
+}
 
 .navbar{
   background-color: rgb(2, 75, 2);
@@ -312,18 +323,25 @@ body {
 
 /* Review Card Settings */
 
+.card-container{
+  margin-top: 30px;
+}
+
 .cards{
   display: flex;
   flex-wrap: wrap;
   text-align: center;
 }
+
 .cards-header{
   text-align:center;
 }
+
 .card{
   flex: 1 0 300px;
   margin: 30px;
   padding:15px;
+  background:#ECECEC;
 }
 
 .card .card-img img{
@@ -341,19 +359,52 @@ body {
   padding-bottom: 15px;
 }
 
-.card-rating{
+.card-bottom-text{
   position: absolute;
   bottom: 0;
   left: 50%;
-  font-size: 1.2em;
+  width: 100%;
+  font-size: 1.5em;
   transform: translateX(-50%);
   padding-top: 15px;
+  color: rgb(2, 75, 2);
 }
 
 .card-name{
-  font-size: 1.5em;
+  font-size: 1.6em;
 }
 
+.card-description{
+  border-top: 1px solid grey;
+  padding-top: 25px;
+}
+
+.fa-pizza-slice{
+  padding-right: 10px;
+  color:grey;
+}
+
+.separator{
+  margin-bottom:30px 0;
+  min-height: 500px;
+  background-image: url(../images/pizza-in-oven.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.separator-text{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  background-color: rgba(0,0,0,0.5);
+  color:white;
+  text-align: center;
+  padding:20px;
+  height: 500px;
+}
 
 /* Menu settings */
 
