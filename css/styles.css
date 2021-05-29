@@ -317,7 +317,9 @@ body {
   flex-wrap: wrap;
   text-align: center;
 }
-
+.cards-header{
+  text-align:center;
+}
 .card{
   flex: 1 0 300px;
   margin: 30px;
@@ -351,6 +353,7 @@ body {
 .card-name{
   font-size: 1.5em;
 }
+
 
 /* Menu settings */
 
