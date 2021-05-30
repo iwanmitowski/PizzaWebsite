@@ -321,7 +321,7 @@ main{
   width: 80%; 
 }
 
-/* Review Card Settings */
+/* Card Settings */
 
 .card-container{
   margin-top: 30px;
@@ -387,12 +387,20 @@ main{
 .separator{
   margin-bottom:30px 0;
   min-height: 500px;
-  background-image: url(../images/pizza-in-oven.jpg);
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
+}
+
+#about-separator{
+  background-image: url(../images/pizza-in-oven.jpg);
+  background-position: center;
+
+}
+
+#reviews-separator{
+  background-image: url(../images/people-eating.jpg);
+  background-position: top;
 }
 
 .separator-text{
@@ -405,6 +413,32 @@ main{
   padding:20px;
   height: 500px;
 }
+
+.history-container{
+  margin: 40px auto ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.history-image-container{
+  flex: 1 0 50%;
+  height: 400px;
+  text-align: center;
+}
+
+.history-container article{
+  flex: 1 0 50%;
+  margin-bottom: 30px;
+}
+
+.history-container article p{
+  text-align: left;
+  font-size: 1.1em;
+  padding-top: auto;
+}
+
 
 /* Menu settings */
 
