@@ -342,6 +342,7 @@ main{
   margin: 30px;
   padding:15px;
   background:#ECECEC;
+  border:1px solid rgba(0, 0, 0, 0.4);
 }
 
 .card .card-img img{
@@ -428,6 +429,10 @@ main{
   text-align: center;
 }
 
+.history-image-container figure{
+  width: 100%;
+}
+
 .history-container article{
   flex: 1 0 50%;
   margin-bottom: 30px;
@@ -452,8 +457,9 @@ main{
   position: relative;
   flex: 1 0 300px;
   margin: 20px 20px;
-  border: 1px solid black;
-  border-radius: 2px;
+  /* border:1px solid rgba(0,0,0,.125); */
+  border:1px solid rgba(0, 0, 0, 0.4);
+  border-radius: .25rem;
   overflow: hidden;
 }
 
@@ -461,9 +467,15 @@ main{
   margin: 0 15px 100px;
 }
 
+.pizza figure{
+  padding: 15px;
+}
+
 .pizza-image {
   width: 100%;
-  background: rgb(255, 155, 144);
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(97, 0, 0, 0.125);
+  border-bottom: 1px solid rgba(97, 0, 0, 0.61);
 }
 
 .mobile-pizza-header {
@@ -471,6 +483,7 @@ main{
   font-size: 1.45em;
   font-weight: bold;
   margin: 5px 0;
+  color: rgb(2, 75, 2);
 }
 
 .mobile-pizza-ingredients{
@@ -491,6 +504,9 @@ main{
   border-radius: 100px;
   margin: 0 10px;
   cursor: pointer;
+  border: 2px solid rgba(97, 0, 0, 0.61);
+  color: rgb(97, 0, 0);
+  
 }
 
 .order-button{
@@ -504,6 +520,14 @@ main{
   font-size: 1.2em;
   cursor: pointer;
   transform: translateX(-50%);
+  border-radius: 5px;
+  border: 2px solid rgba(97, 0, 0, 0.61);
+  background-color: #941a26;
+  color:white;
+}
+
+.order-button a{
+  color:inherit;
 }
 
 .pizza-carousel-menu{
@@ -564,15 +588,20 @@ main{
 
 /*Contacts Settings*/
 
-.info-container{
-  text-align: center;
-}
 
-form, .info-container{
+
+form{
   width: 70%;
   margin: 40px auto;
   border-radius: 5px;
   padding: 20px;
+}
+
+.info-container{
+  text-align: center;
+  border-bottom: 1px solid rgba(97, 0, 0, 0.61);
+  width: 50%;
+  margin: 40px auto;
 }
 
 form label,.info-article h3{
@@ -596,7 +625,7 @@ form label,.info-article h3{
 form input[type=text], select, input[type=date],input[type=email],input[type="tel"], textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border:1px solid rgba(0, 0, 0, 0.4);
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -611,8 +640,8 @@ form textarea{
 
 form input[type=submit] {
   background-color: #fff;
-  color: rgb(2, 75, 2);
-  border: 1px solid rgb(148, 148, 148);
+  color: #941a26;
+  border:1px solid rgba(0, 0, 0, 0.4);
   border-radius: 4px;
   margin: 20px 0;
   padding: 10px 25px;
