@@ -496,6 +496,48 @@ main{
   margin:0 auto;
 }
 
+.buttons{
+  margin-top: auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-items: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 20px;
+  transform: translateY(35%);
+}
+
+.index-buttons{
+  transform: translateY(90%);
+}
+
+.mobile-pizza-ingredients{
+  margin-top: 5px;
+  height: 3em;
+}
+
+.mobile-pizza-header{
+  height: 3em;
+}
+
+.order-button{
+  display: block; 
+  margin: 20px auto 15px;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid rgba(97, 0, 0, 0.61);
+  background-color: #941a26;
+  color:white;
+}
+
+.size-button-container{
+  flex: 1 0 100%;
+  margin: 30px auto;
+}
+
 .size-button, .servings-button {
   display: inline-block;
   height: 40px;
@@ -509,22 +551,7 @@ main{
   
 }
 
-.order-button{
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  display: block;
-  margin: 25px auto 15px;
-  padding: 10px 25px;
-  text-transform: uppercase;
-  font-size: 1.2em;
-  cursor: pointer;
-  transform: translateX(-50%);
-  border-radius: 5px;
-  border: 2px solid rgba(97, 0, 0, 0.61);
-  background-color: #941a26;
-  color:white;
-}
+
 
 .order-button a{
   color:inherit;
@@ -587,8 +614,6 @@ main{
 }
 
 /*Contacts Settings*/
-
-
 
 form{
   width: 70%;
