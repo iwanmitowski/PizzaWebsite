@@ -323,7 +323,8 @@ main{
 }
 
 .new-offer img{
-  width: 80%; 
+  width: 80%;
+  max-width: 640px; 
 }
 
 /* Card Settings */
