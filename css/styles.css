@@ -141,6 +141,11 @@ main{
   color:#BE1E2D;
 }
 
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 /* Icon 1 */
 
 .animated-icon1, .animated-icon2, .animated-icon3 {
