@@ -37,7 +37,7 @@ main{
   float: right;
   color: #111;
   text-align: right;
-  padding-top: 350px;
+  padding-top: 420px;
   font-size: 1.3em;
   padding-right: 30px;
   font-family: 'Pacifico', cursive;
@@ -739,9 +739,13 @@ main{
 
 /*Contacts Settings*/
 
+.container-contacts article p{
+  display: block;
+}
+
 form{
   width: 70%;
-  margin: 40px auto;
+  margin: 30px auto;
   border-radius: 5px;
   padding: 20px;
 }
@@ -801,8 +805,9 @@ form input[type=submit] {
 
 .map iframe{
   width: 100%;
-  height: 400px;
+  height: 500px;
   border: none;
+  border:1px solid rgba(0, 0, 0, 0.4);
 }
 
 /* Footer Settings */
@@ -810,7 +815,7 @@ form input[type=submit] {
 footer {
   background-color: #BE1E2D;
   text-align: center;
-  margin:0;
+  margin-top:60px;
 }
 
 .footer-credits-section{
@@ -862,10 +867,13 @@ footer p {
   .cards,.mobile-pizza-menu{
     justify-content: center;
   }
+
   .card,.pizza{
     flex: 0 0 400px;
-    margin:0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
+
   .history-image-container{
     background-position: center;
   }
@@ -875,6 +883,13 @@ footer p {
 @media screen and (min-width:768px){
   .pizza{
     flex: 1 0 300px;
+    margin: 20px 20px;
+  }
+
+  .card{
+    flex: 0 0 400px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
@@ -882,13 +897,28 @@ footer p {
   .desktop-nav{
     display: flex;
   }
+
   .mobile-nav{
     display: none;
+  }
+
+  .pizza{
+    flex: 1 0 400px;
+    margin: 20px 20px;
+  }
+
+  .map{
+    width: 70%;
+    margin:0 auto;
   }
 }
 
 @media screen and (min-width:1200px){
-  
+  .card,.pizza{
+    flex: 0 0 350px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 @media screen and (min-width:1400px){
