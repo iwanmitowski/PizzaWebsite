@@ -53,14 +53,13 @@ main{
   justify-content: space-between; 
   position: sticky;
   top: 0px;
-  /* background-color: rgba(255,255,255,0.9); */
-  background-color: rgba(2, 75, 2,1);
+  background-color: rgb(2, 75, 2);
   z-index: 10;
   display: none;
 }
 
 .desktop-nav .logo img{
-  margin: 15px 20px;
+  margin:20px;
   width:48px;
   height: 48px;
 }
@@ -332,6 +331,7 @@ main{
 
 .card-container{
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .cards{
@@ -423,21 +423,20 @@ main{
 }
 
 .history-container{
-  margin: 40px auto ;
+  margin: 0px auto ;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  width: 60%;
+  justify-content: space-between;
+  width: 70%;
 }
 
 .history-image-container{
-  flex: 1 0 50%;
-  height: 400px;
-  text-align: center;
-}
-
-.history-image-container figure{
-  width: 100%;
+    background-image: url(../images/history.jpg);
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+    margin:0 auto 50px auto;
 }
 
 .history-container article{
@@ -459,6 +458,7 @@ main{
   /* display: none; */
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 30px;
 }
 
 .pizza {
@@ -558,8 +558,6 @@ main{
   color: rgb(97, 0, 0);
   
 }
-
-
 
 .order-button a{
   color:inherit;
@@ -725,6 +723,10 @@ main{
   justify-content: flex-end;
 }
 
+/* OSTAVQME ?!  */
+/* OSTAVQME ?!  */
+/* OSTAVQME ?!  */
+/* OSTAVQME ?!  */
 @media screen and (max-width: 960px) {
   .pizza-carousel-menu {
     display: none;
@@ -856,6 +858,26 @@ footer p {
 
 /* Responsive */
 
+@media screen and (min-width:576px){
+  .cards,.mobile-pizza-menu{
+    justify-content: center;
+  }
+  .card,.pizza{
+    flex: 0 0 400px;
+    margin:0 auto;
+  }
+  .history-image-container{
+    background-position: center;
+  }
+
+}
+
+@media screen and (min-width:768px){
+  .pizza{
+    flex: 1 0 300px;
+  }
+}
+
 @media screen and (min-width:992px){
   .desktop-nav{
     display: flex;
@@ -863,4 +885,12 @@ footer p {
   .mobile-nav{
     display: none;
   }
+}
+
+@media screen and (min-width:1200px){
+  
+}
+
+@media screen and (min-width:1400px){
+  
 }
