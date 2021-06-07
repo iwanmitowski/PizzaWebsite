@@ -137,7 +137,7 @@ main{
   color:#941a26;
 }
 
-#mobile-cart:hover{
+#mobile-cart:hover, .active #mobile-cart {
   color:#BE1E2D;
 }
 
@@ -820,4 +820,35 @@ footer p {
   font-size: 17px;
   color:white;
   margin: 0;
+}
+
+/* Cart */
+
+.cart {
+  margin: 32px 0;
+}
+
+.cart-title {
+  margin-left: 32px;
+}
+
+.cart-item {
+  border: 1px solid black;
+
+}
+
+.cart-item-image {
+  max-width: 140px;
+  margin-right: 20px;
+  float: left;
+}
+
+.cart-item::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.cart-item-title {
+  font-size: 1.25em;
 }
