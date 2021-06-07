@@ -53,7 +53,8 @@ main{
   justify-content: space-between; 
   position: sticky;
   top: 0px;
-  background-color: rgba(255,255,255,0.9);
+  /* background-color: rgba(255,255,255,0.9); */
+  background-color: rgba(2, 75, 2,1);
   z-index: 10;
   display: none;
 }
@@ -69,8 +70,9 @@ main{
 }
 
 .main-nav ul {
-  margin: 15px 20px;
+  margin: 20px;
   list-style-type: none;
+  display: flex;
 }
 
 .main-nav ul li {
@@ -78,7 +80,7 @@ main{
 }
 
 .main-nav ul li a {
-  color: rgb(2, 75, 2);
+  color: rgb(255, 255, 255);
   font-size: 1.3em;
   padding: 10px 15px;
   display: block;
@@ -86,7 +88,7 @@ main{
 }
 
 .main-nav ul li:hover{
-  color:rgb(2, 75, 2);
+  color: rgb(255, 255, 255);
 }
 
 .main-nav ul li a:hover{
@@ -97,15 +99,15 @@ main{
 
 #cart{
   color:white;
-  background-color: #BE1E2D;
+  background-color: #941a26;
   margin-left: 20px;
   border-radius: 3px;
-
 }
 
 #cart:hover{
   background-color: #BE1E2D;
-  border-radius: 10px;
+  border-bottom: none;
+
 }
 
 /* Mobile Nav Settings */
