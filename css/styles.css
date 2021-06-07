@@ -15,13 +15,6 @@ body {
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
-main{
-  /* background-image: url(../images/background-whitewood.jpg); */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 /* Header settings */
 
 #header-image {
