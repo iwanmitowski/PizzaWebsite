@@ -38,7 +38,7 @@
                 <li><a href="index.html">Начало</a></li>
                 <li><a href="menu.html">Меню</a></li>
                 <li><a href="contacts.html">Контакти</a></li>
-                <li><a href="#" id="cart">Количка <i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="cart.html" id="cart">Количка <i class="fas fa-shopping-cart"></i></a></li>
             </ul>
         </nav>
     </div>
@@ -67,14 +67,14 @@
                         <a href="contacts.html" class="nav-link">Контакти</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" id="mobile-cart">Количка <i class="fas fa-shopping-cart"></i></a>
+                        <a href="cart.html" class="nav-link" id="mobile-cart">Количка <i class="fas fa-shopping-cart"></i></a>
                     </li>
                 </ul>
                 <!-- Links -->
             </div>
         </nav>
     </div>
-    <main>
+    <main class="container">
         <section class="pizza-carousel-menu">
             <div>
                 <h1 class="carousel-pizza-name">Голев специална</h1>
@@ -109,26 +109,30 @@
             <button class="order-button" id="carousel-order-button">Добави <i class="fas fa-shopping-cart"></i></button>
 
             <div class="carousel-pizza-directions">
-                <button id="left-arrow"><i class="fas fa-arrow-left"></i></button>
-                <button id="right-arrow"><i class="fas fa-arrow-right"></i></button>
+                <!-- <button id="left-arrow"><i class="fas fa-arrow-left"></i></button>
+                <button id="right-arrow"><i class="fas fa-arrow-right"></i></button> -->
             </div>
             <!-- TO STYLE -->
-            <div class="carousel-pizzas">
-
-                <figure>
-                    <img src="images/pizzas//sm/golev_specialna.png">
-                    <img src="images/pizzas//sm/american_hot.png">
-                    <img src="images/pizzas//sm/barbecue_classic.png">
-                    <img src="images/pizzas//sm/burger_pizza.png">
-                    <img src="images/pizzas//sm/carbonara.png">
-                    <img src="images/pizzas//sm/chick_chi_rick.png">
-                    <img src="images/pizzas//sm/extravaganza.png">
-                    <img src="images/pizzas//sm/formaggi.png">
-                    <img src="images/pizzas//sm/garden_classic.png">
-                    <img src="images/pizzas//sm/gaucho.png">
-                    <img src="images/pizzas//sm/hawai.png">
-                    <img src="images/pizzas//sm/ham_classic.png">
-                </figure>
+            <div class="carousel-pizzas-overflow-container">
+                <div class="carousel-pizzas">
+                    <div class="carousel-pizza-container">
+                        <img class="carousel-pizza" src="images/pizzas/sm/golev_specialna.png">
+                    </div>
+                    <div class="carousel-pizza-container carousel-pizza-2">
+                        <img class="carousel-pizza" src="images/pizzas/sm/american_hot.png">
+                    </div>
+                    <!-- <img src="images/pizzas/sm/american_hot.png">
+                    <img src="images/pizzas/sm/barbecue_classic.png">
+                    <img src="images/pizzas/sm/burger_pizza.png">
+                    <img src="images/pizzas/sm/carbonara.png">
+                    <img src="images/pizzas/sm/chick_chi_rick.png">
+                    <img src="images/pizzas/sm/extravaganza.png">
+                    <img src="images/pizzas/sm/formaggi.png">
+                    <img src="images/pizzas/sm/garden_classic.png">
+                    <img src="images/pizzas/sm/gaucho.png">
+                    <img src="images/pizzas/sm/hawai.png">
+                    <img src="images/pizzas/sm/ham_classic.png"> -->
+                </div>
             </div>
         </section>
 
@@ -343,13 +347,14 @@
             </div>
         </section>
 
+    </main>
 
-        <footer>
-            <section class="footer-credits-section">
-                <p>Красимир Неделчев & Иван Митовски</p>
-                <p>&copy; Всички права запазени</p>
-            </section>
-        </footer>
+    <footer>
+        <section class="footer-credits-section">
+            <p>Красимир Неделчев & Иван Митовски</p>
+            <p>&copy; Всички права запазени</p>
+        </section>
+    </footer>
 </body>
 
 </html>

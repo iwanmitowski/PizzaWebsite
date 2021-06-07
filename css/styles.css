@@ -137,8 +137,13 @@ main{
   color:#941a26;
 }
 
-#mobile-cart:hover{
+#mobile-cart:hover, .active #mobile-cart {
   color:#BE1E2D;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 /* Icon 1 */
@@ -318,7 +323,8 @@ main{
 }
 
 .new-offer img{
-  width: 80%; 
+  width: 80%;
+  max-width: 640px; 
 }
 
 /* Card Settings */
@@ -449,6 +455,7 @@ main{
 
 .mobile-pizza-menu {
   background: #ececec;
+  /* display: none; */
   display: flex;
   flex-wrap: wrap;
 }
@@ -592,17 +599,121 @@ main{
   margin-bottom: 10px;
 }
 
-.carousel-pizzas img{
-  width: 30%;
+.carousel-pizzas-overflow-container {
+  height: 400px;
+  overflow: hidden;
 }
 
-.carousel-pizzas figure {
- display: flex;
- flex-wrap: wrap;
+.carousel-pizzas {
+  position: relative;
+  height: 1500px;
+  width: 1500px;
+  background-color: salmon;
+  border-radius: 10000px;
 }
 
-.carousel-pizzas figure img{
-  flex: 1 0 30%;
+.carousel-pizza-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.carousel-pizza {
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Calculated values */
+
+.carousel-pizza-1 {
+  transform: rotate(30deg);
+}
+
+.carousel-pizza-2 {
+  transform: rotate(60deg);
+}
+
+.carousel-pizza-3 {
+  transform: rotate(90deg);
+}
+
+.carousel-pizza-4 {
+  transform: rotate(120deg);
+}
+
+.carousel-pizza-5 {
+  transform: rotate(150deg);
+}
+
+.carousel-pizza-6 {
+  transform: rotate(180deg);
+}
+
+.carousel-pizza-7 {
+  transform: rotate(210deg);
+}
+
+.carousel-pizza-8 {
+  transform: rotate(240deg);
+}
+
+.carousel-pizza-9 {
+  transform: rotate(270deg);
+}
+
+.carousel-pizza-10 {
+  transform: rotate(300deg);
+}
+
+.carousel-pizza-11 {
+  transform: rotate(330deg);
+}
+
+.carousel-pizza-1 .carousel-pizza {
+  transform: rotate(-30deg);
+}
+
+.carousel-pizza-2 .carousel-pizza {
+  transform: rotate(-60deg);
+}
+
+.carousel-pizza-3 .carousel-pizza {
+  transform: rotate(-90deg);
+}
+
+.carousel-pizza-4 .carousel-pizza {
+  transform: rotate(-120deg);
+}
+
+.carousel-pizza-5 .carousel-pizza {
+  transform: rotate(-150deg);
+}
+
+.carousel-pizza-6 .carousel-pizza {
+  transform: rotate(-180deg);
+}
+
+.carousel-pizza-7 .carousel-pizza {
+  transform: rotate(-210deg);
+}
+
+.carousel-pizza-8 .carousel-pizza {
+  transform: rotate(-240deg);
+}
+
+.carousel-pizza-9 .carousel-pizza {
+  transform: rotate(-270deg);
+}
+
+.carousel-pizza-10 .carousel-pizza {
+  transform: rotate(-300deg);
+}
+
+.carousel-pizza-11 .carousel-pizza {
+  transform: rotate(-330deg);
 }
 
 #carousel-order-button{
@@ -611,6 +722,16 @@ main{
 
 .carousel-pizza-ingredients{
   justify-content: flex-end;
+}
+
+@media screen and (max-width: 960px) {
+  .pizza-carousel-menu {
+    display: none;
+  }
+
+  .mobile-pizza-menu {
+    display: flex;
+  }
 }
 
 /*Contacts Settings*/
@@ -699,4 +820,35 @@ footer p {
   font-size: 17px;
   color:white;
   margin: 0;
+}
+
+/* Cart */
+
+.cart {
+  margin: 32px 0;
+}
+
+.cart-title {
+  margin-left: 32px;
+}
+
+.cart-item {
+  border: 1px solid black;
+
+}
+
+.cart-item-image {
+  max-width: 140px;
+  margin-right: 20px;
+  float: left;
+}
+
+.cart-item::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.cart-item-title {
+  font-size: 1.25em;
 }
