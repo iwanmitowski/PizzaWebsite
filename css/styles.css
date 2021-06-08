@@ -40,6 +40,23 @@ body {
   margin-bottom: 25px;
 }
 
+.pizza-detail{
+  position:fixed;
+  top: 400px;
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 30%;
+}
+
+.pizza-detail:first-of-type{
+  left:100px;
+}
+
+.pizza-detail:last-of-type{
+  right:100px;
+  transform: scaleX(-1);
+}
+
 /* Desktop Nav settings */
 
 .desktop-nav{
@@ -447,7 +464,7 @@ body {
 /* Menu settings */
 
 .mobile-pizza-menu {
-  background: #ececec;
+  /* background: #ececec; */
   /* display: none; */
   display: flex;
   flex-wrap: wrap;
@@ -455,6 +472,7 @@ body {
 }
 
 .pizza {
+  background: #ececec;
   position: relative;
   flex: 1 0 300px;
   margin: 20px 20px;
@@ -960,6 +978,11 @@ footer p {
   .card:last-of-type{
     display: none;
   }
+  
+  .card-container:last-of-type  .card{
+    flex: 0 0 300px;
+
+  }
 
   .form-container, .map{
     width: 60%;
@@ -968,7 +991,7 @@ footer p {
 }
 
 @media screen and (min-width:1400px){
-  .pizza, .card{
+  .pizza{
     flex: 0 0 300px;
     margin-left: 20px;
     margin-right: 20px;
@@ -976,6 +999,11 @@ footer p {
 
   .card:last-of-type{
     display: flex;
+  }
+
+  
+  .card-container:last-of-type  .card{
+    flex: 0 0 300px;
   }
 
   .form-container, .map{
