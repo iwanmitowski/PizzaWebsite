@@ -46,6 +46,7 @@ body {
   z-index: -1;
   filter: blur(10px);
   opacity: 30%;
+  visibility:hidden;
 }
 
 .pizza-detail:first-of-type{
@@ -965,6 +966,10 @@ footer p {
 }
 
 @media screen and (min-width:1200px){
+  .pizza-detail{
+    visibility: visible;
+  }
+
   .pizza{
     flex: 0 0 400px;
     margin-left: 40px;
