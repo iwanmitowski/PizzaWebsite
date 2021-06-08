@@ -732,6 +732,10 @@ body {
 
 /*Contacts Settings*/
 
+.info-container{
+  padding-bottom: 30px;
+}
+
 .container-contacts article p{
   display: block;
 }
@@ -857,6 +861,11 @@ footer p {
 /* Responsive */
 
 @media screen and (min-width:576px){
+  #header-headings{
+    padding-top: 400px;
+    padding-right: 50px;
+  }
+
   .cards,.mobile-pizza-menu{
     justify-content: center;
   }
@@ -874,6 +883,19 @@ footer p {
 }
 
 @media screen and (min-width:768px){
+  #header-headings{
+    padding-top: 340px;
+    padding-right: 60px;
+  }
+
+  #header-headings h1{
+    font-size: 3.5rem;
+  }
+
+  #header-headings h2{
+    font-size: 2.5rem;
+  }
+
   .pizza{
     flex: 1 0 300px;
     margin: 20px 20px;
@@ -884,11 +906,29 @@ footer p {
     margin-left: 20px;
     margin-right: 20px;
   }
+
+  .history-container article p{
+    text-align: justify;
+  }
 }
 
 @media screen and (min-width:992px){
+  #header-headings{
+    padding-top: 320px;
+    padding-right: 90px;
+  }
+
   .desktop-nav{
     display: flex;
+  }
+
+  .container-menu .mobile-pizza-menu{
+    display: none;
+  }
+
+  .form-container{
+    width: 70%;
+    margin:0 auto;
   }
 
   .mobile-nav{
@@ -907,13 +947,38 @@ footer p {
 }
 
 @media screen and (min-width:1200px){
-  .card,.pizza{
-    flex: 0 0 350px;
-    margin-left: 20px;
-    margin-right: 20px;
+  .pizza{
+    flex: 0 0 400px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
+
+  .card{
+    flex: 0 0 350px;
+  }
+
+  .card:last-of-type{
+    display: none;
+  }
+
+  .form-container, .map{
+    width: 60%;
+  }
+
 }
 
 @media screen and (min-width:1400px){
-  
+  .pizza, .card{
+    flex: 0 0 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .card:last-of-type{
+    display: flex;
+  }
+
+  .form-container, .map{
+    width: 50%;
+  }
 }
