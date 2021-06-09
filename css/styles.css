@@ -45,7 +45,7 @@ body {
   top: 400px;
   z-index: -1;
   filter: blur(10px);
-  opacity: 30%;
+  opacity: 20%;
   visibility:hidden;
 }
 
@@ -980,11 +980,11 @@ footer p {
     flex: 0 0 350px;
   }
 
-  .card:last-of-type{
+  .card-container:last-of-type  .card:last-of-type{
     display: none;
   }
   
-  .card-container:last-of-type  .card{
+  .card{
     flex: 0 0 300px;
 
   }
@@ -996,19 +996,20 @@ footer p {
 }
 
 @media screen and (min-width:1400px){
+
+  #header-headings {
+    padding-top:30%;
+    padding-right: 100px;
+  }
+
   .pizza{
     flex: 0 0 300px;
     margin-left: 20px;
     margin-right: 20px;
   }
 
-  .card:last-of-type{
+  .card-container:last-of-type  .card:last-of-type{
     display: flex;
-  }
-
-  
-  .card-container:last-of-type  .card{
-    flex: 0 0 300px;
   }
 
   .form-container, .map{
