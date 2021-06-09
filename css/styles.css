@@ -955,16 +955,12 @@ footer p {
   outline: none;
 }
 
-.button-minus, .button-plus {
-  margin: 0 10px;
-}
-
 .button-minus {
-  margin-right: 10px;
+  margin-right: 4px;
 }
 
 .button-plus {
-  margin-left: 10px;
+  margin-left: 4px;
 }
 
 .cart-product-price {
@@ -1059,6 +1055,11 @@ footer p {
   .delivery-form {
     width: 100%;
   }
+
+  .complete-order {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1072,6 +1073,10 @@ footer p {
   .delivery-details {
     margin-left: 16px;
     margin-right: 16px;
+  }
+
+  .cart-table {
+    font-size: 1.1em;
   }
 }
 
@@ -1094,6 +1099,16 @@ footer p {
 
   .delivery-form {
     padding-top: 0px;
+  }
+
+  .complete-order {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .container {
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 
