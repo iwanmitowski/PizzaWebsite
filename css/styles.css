@@ -117,12 +117,13 @@ body {
   background-color: #941a26;
   margin-left: 20px;
   border-radius: 3px;
+  transition: 0.3s ease-out;
+  margin-bottom: 0px;
 }
 
 #cart:hover{
   background-color: #BE1E2D;
   border-bottom: none;
-
 }
 
 /* Mobile Nav Settings */
