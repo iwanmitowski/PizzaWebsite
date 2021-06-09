@@ -128,6 +128,12 @@ body {
 
 /* Mobile Nav Settings */
 
+.mobile-nav{
+  position: sticky;
+  top: 0px;
+  z-index: 20;
+}
+
 .mobile-nav div ul{
   padding-top: 15px;
 }
@@ -420,7 +426,6 @@ body {
 #about-separator{
   background-image: url(../images/pizza-in-oven.jpg);
   background-position: center;
-
 }
 
 #reviews-separator{
@@ -466,7 +471,6 @@ body {
   font-size: 1.1em;
   padding-top: auto;
 }
-
 
 /* Menu settings */
 
@@ -891,10 +895,6 @@ footer p {
   border-radius: 5px;
 }
 
-.cart {
-
-}
-
 .cart-pizza-detail {
   top: 600px;
 }
@@ -1190,8 +1190,8 @@ footer p {
   }
 
   .pizza{
-    flex: 1 0 300px;
-    margin: 20px 40px;
+    flex: 0 0 350px;
+    margin: 20px 20px;
   }
 
   .map{
@@ -1206,7 +1206,7 @@ footer p {
   }
 
   .pizza{
-    flex: 0 0 300px;
+    flex: 0 0 400px;
     margin-left: 40px;
     margin-right: 40px;
   }
