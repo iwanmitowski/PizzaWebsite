@@ -140,7 +140,7 @@
     idbKeyval
       .get("order")
       .then((products) => {
-        if (products == null) {
+        if (products == null || products.length === 0) {
           document.querySelector(".cart-empty").style.display = "block";
           document.querySelector(".cart-full").style.display = "none";
         } else {
