@@ -547,6 +547,10 @@ body {
   transform: translateY(90%);
 }
 
+.pizza button a{
+  text-decoration: none;
+}
+
 .mobile-pizza-ingredients{
   margin-top: 5px;
   text-align: center;
