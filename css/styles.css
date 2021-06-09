@@ -503,6 +503,10 @@ body {
   margin: 0 15px 50px;
 }
 
+.pizza-box-home {
+  margin-bottom: 80px;
+}
+
 .pizza figure{
   padding: 15px;
 }
