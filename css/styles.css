@@ -107,6 +107,11 @@ body {
     margin-bottom: -1px;
 }
 
+.history .cards-header h1{
+  margin-bottom: 40px;
+
+}
+
 #cart{
   color:white;
   background-color: #941a26;
