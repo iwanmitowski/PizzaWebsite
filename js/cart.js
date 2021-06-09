@@ -118,19 +118,16 @@
           transitionIn: "flipInX",
           transitionOut: "flipOutX",
           onClosed: function () {
+            function redirectToHome() {
+              window.location.href = window.location.href.replace(
+                "cart.html",
+                ""
+              );
+            }
             idbKeyval
               .set("order", null)
-              .then(() => {
-                // Redirect to home page
-                window.location.href = window.location.origin;
-              })
-              .catch(function () {
-                // Redirect to home page
-                window.location.href = window.location.href.replace(
-                  "cart.html",
-                  ""
-                );
-              });
+              .then(redirectToHome)
+              .catch(redirectToHome);
           },
         });
       });
