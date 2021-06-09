@@ -831,15 +831,23 @@ form textarea{
 }
 
 form input[type=submit] {
-  background-color: #fff;
-  color: #941a26;
+  display: block;
+  background-color: #941a26;
+  color: #fff;
   border:1px solid rgba(0, 0, 0, 0.4);
   border-radius: 4px;
-  margin: 20px 0;
+  margin: 20px 0 20px auto;
   padding: 10px 25px;
   text-transform: uppercase;
   font-size: 1.2em;
   cursor: pointer;
+  transition: 0.3s ease-out;
+  transition-property: color background-color;
+}
+
+form input[type=submit]:hover {
+  background-color: #fff;
+  color: #941a26;
 }
 
 .map iframe{
@@ -1003,20 +1011,6 @@ footer p {
 
 .input-container:last-child {
   padding-right: 0;
-}
-
-/* Increase specificity */
-.order-button.order-button {
-  margin-left: auto;
-  color: #fff;
-  background-color: #941a26;
-  transition: 0.3s ease-out;
-  transition-property: color background-color;
-}
-
-.order-button:hover {
-  background-color: #fff;
-  color: #941a26;
 }
 
 .cart-item {
