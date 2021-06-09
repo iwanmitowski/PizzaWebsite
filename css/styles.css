@@ -1177,17 +1177,16 @@ footer p {
     margin-right: 40px;
   }
 
-  .card{
-    flex: 0 0 350px;
-  }
-
   .card-container:last-of-type  .card:last-of-type{
     display: none;
   }
   
   .card{
     flex: 0 0 300px;
+  }
 
+  .about-restaurant .card{
+    flex:0 0 350px;
   }
 
   .form-container, .map{
