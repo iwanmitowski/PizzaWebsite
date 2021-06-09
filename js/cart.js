@@ -48,7 +48,7 @@
         idbKeyval.get("order").then(function (products) {
           // Remove from idb and later refresh
           if (isMinus && quantity === 1) {
-            products = products.filter((p) => p.name !== pizzaName);
+            products = products.filter((p) => p.name !== pizzaName || p.size !== size);
             shouldRefresh = true;
           } else {
             products = products.map((p) => {
