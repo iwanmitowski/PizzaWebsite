@@ -477,6 +477,17 @@ body {
   padding-bottom: 30px;
 }
 
+.mobile-pizza-price {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.price-accent {
+  color: #941a26;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
 .pizza {
   background: #ececec;
   position: relative;
@@ -489,7 +500,7 @@ body {
 }
 
 .pizza-box {
-  margin: 0 15px 100px;
+  margin: 0 15px 50px;
 }
 
 .pizza figure{
@@ -511,10 +522,6 @@ body {
   color: rgb(2, 75, 2);
 }
 
-.mobile-pizza-ingredients{
-  text-align: center;
-}
-
 .size-button-container {
   margin: 10px auto;
   text-align: center;
@@ -529,7 +536,6 @@ body {
   justify-content: space-between;
   align-items: flex-end;
   margin-top: 20px;
-  transform: translateY(35%);
 }
 
 .index-buttons{
@@ -538,7 +544,8 @@ body {
 
 .mobile-pizza-ingredients{
   margin-top: 5px;
-  height: 3em;
+  text-align: center;
+  height: 4em;
 }
 
 .mobile-pizza-header{
@@ -573,7 +580,13 @@ body {
   cursor: pointer;
   border: 2px solid rgba(97, 0, 0, 0.61);
   color: rgb(97, 0, 0);
-  
+  transition: 0.3s;
+  transition-property: background color;
+}
+
+.size-button.selected {
+  background: rgb(97, 0, 0);
+  color: #fff;
 }
 
 .order-button a{
@@ -581,6 +594,7 @@ body {
 }
 
 .pizza-carousel-menu{
+  display: none;
   margin:0 auto;
   padding-top: 30px;
 }
@@ -836,7 +850,7 @@ form input[type=submit] {
 footer {
   background-color: #BE1E2D;
   text-align: center;
-  margin-top:60px;
+  margin-top: 20px;
 }
 
 .footer-credits-section{
@@ -853,33 +867,211 @@ footer p {
 
 /* Cart */
 
+.complete-order {
+  margin: 32px 64px 16px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 32px 32px 0;
+  border-radius: 5px;
+}
+
 .cart {
-  margin: 32px 0;
+
+}
+
+.cart-pizza-detail {
+  top: 600px;
 }
 
 .cart-title {
-  margin-left: 32px;
+  font-size: 2.5em;
+  text-align: center;
+  padding-bottom: 64px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.cart-empty {
+  display: none;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+.cart-table {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 1.25em;
+  /* color: rgba(0, 0, 0, 0.6); */
+}
+
+.cart-header {
+  color: #000;
+}
+
+.cart-table-header-cell {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  padding-bottom: 8px;
+}
+
+.cart-product-name {
+  font-size: 1.25em;
+  text-align: left;
+  margin-left: 16px;
+}
+
+.cart-product-row/*:not(:last-child)*/ {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.cart-product-size {
+  text-align: left;
+  font-size: 0.9em;
+  margin-left: 16px;
+}
+
+.cart-product-quantity {
+  font-size: 1.5em;
+}
+
+.cart-product-price {
+  /* color: #BE1E2D; */
+  font-size: 1.1em;
+}
+
+.cart-table-cell {
+  text-align: center;
+}
+
+.cart-table-inner-cell {
+  padding: 16px 0;
+}
+
+.cart-footer-cell {
+  padding-top: 32px;
+  font-size: 1.1em;
+}
+
+.cart-total-label {
+  padding-right: 24px;
+  text-align: right;
+}
+
+.cart-total {
+  text-align: center;
+}
+
+.delivery-details {
+  margin: 64px 64px 16px;
+}
+
+.delivery-title {
+  padding-bottom: 32px;
+  font-size: 1.9em;
+}
+
+.delivery-time-paragraph {
+  font-size: 1.3em;
+}
+
+#delivery-time {
+  background: #024b02;
+  padding: 4px;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.delivery-form {
+}
+
+.delivery-form .input-group {
+  display: flex;
+}
+
+.input-container {
+  flex: 0 0 50%;
+  padding: 0 16px;
+}
+
+.input-container:first-child {
+  padding-left: 0;
+}
+
+.input-container:last-child {
+  padding-right: 0;
+}
+
+/* Increase specificity */
+.order-button.order-button {
+  margin-left: auto;
+  color: #fff;
+  background-color: #941a26;
+  transition: 0.3s ease-out;
+  transition-property: color background-color;
+}
+
+.order-button:hover {
+  background-color: #fff;
+  color: #941a26;
 }
 
 .cart-item {
   border: 1px solid black;
-
 }
 
-.cart-item-image {
+.cart-product-image {
   max-width: 140px;
-  margin-right: 20px;
-  float: left;
-}
-
-.cart-item::after {
-  content: "";
-  display: block;
-  clear: both;
 }
 
 .cart-item-title {
   font-size: 1.25em;
+}
+
+@media screen and (max-width: 960px) {
+  .input-group.input-group {
+    display: block;
+  }
+
+  .input-container {
+    padding: 0;
+  }
+  .delivery-form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .complete-order {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .delivery-details {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .cart-title {
+    font-size: 2em;
+  }
+  
+  .cart-product-image {
+    display: none;
+  }
+
+  .cart-table {
+    font-size: 1em;
+  }
+
+  .delivery-time-paragraph {
+    font-size: 1.1em;
+  }
+
+  .delivery-form {
+    padding-top: 0px;
+  }
 }
 
 /* Responsive */
@@ -947,7 +1139,7 @@ footer p {
   }
 
   .container-menu .mobile-pizza-menu{
-    display: none;
+    /* display: none; */
   }
 
   .form-container{

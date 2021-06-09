@@ -14,6 +14,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link type="text/css" rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/site-icon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css">
     <script src="https://kit.fontawesome.com/1178c1936b.js" crossorigin="anonymous"></script>
     <script src="js/javascript.js"></script>
     <title>При Голев | Количка</title>
@@ -75,13 +76,94 @@
         </nav>
     </div>
     <main class="container">
-        <div class="cart">
-            <h1 class="cart-title">Количка</h1>
-            <div class="cart-items">
-                <div class="cart-item">
-                    <img src="./images/pizzas/sm/american_hot.png" alt="" class="cart-item-image">
-                    <h2 class="cart-item-title">Американска лютивина</h2>
+        <div class="complete-order">
+            <div class="cart-empty">
+                <h2>Количката ви е празна</h2>
+                <div>Върнете се към <a href="/menu.html">менюто</a></div>
+            </div>
+            <div class="cart-full">
+            <section class="cart">
+                <h1 class="cart-title">Завършване на поръчка</h1>
+                <table class="cart-table">
+                    <thead class="cart-header">
+                        <tr>
+                            <th class="cart-table-cell cart-table-header-cell">
+                                <!-- Product image -->
+                            </th>
+                            <th class="cart-table-cell cart-table-header-cell">Продукт</th>
+                            <th class="cart-table-cell cart-table-header-cell">Количество</th>
+                            <th class="cart-table-cell cart-table-header-cell">Цена</th>
+                        </tr>
+                        <tbody class="cart-products">
+
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="cart-footer-cell cart-total-label"><b>Общо</b></td>
+                                <td class="cart-footer-cell cart-total"><b>0.00лв</b></td>
+                            </tr>
+                        </tfoot>
+                    </thead>
+                </table>
+                
+                <template id="cart-template">
+                    <tr class="cart-product-row">
+                        <td class="cart-table-cell cart-table-inner-cell"><img src="image_url" alt="pizza_name" class="cart-product-image"></td>
+                        <td class="cart-table-cell cart-table-inner-cell">
+                            <div class="cart-product-name">
+                                Име на пицата
+                            </div>
+                            <div class="cart-product-size">Размер</div>
+                        </td>
+                        <td class="cart-table-cell cart-table-inner-cell cart-product-quantity">Количество</td>
+                        <td class="cart-table-cell cart-table-inner-cell cart-product-price">Цена в лв</td>
+                    </tr>
+                </template>
+                
+                <!-- Background -->
+                <div>
+                    <img class="pizza-detail cart-pizza-detail" src="images/pizzas/sm/italian.png" alt="Пица детайл">
+                    <img class="pizza-detail cart-pizza-detail" src="images/pizzas/sm/italian.png" alt="Пица детайл">
                 </div>
+            </section>
+
+            <section class="delivery-details">
+                <h1 class="cart-title delivery-title">Детайли за доставка</h1>
+                <p class="delivery-time-paragraph"><i class="far fa-clock fa-sm" aria-hidden="true"></i> Вашата поръчка ще бъде доставена до <span id="delivery-time">30</span> мин</p>
+                <form class="delivery-form" action="#order" method="POST">
+                    <div class="input-group">
+                        <div class="input-container">
+                            <label for="fName">Име</label>
+                            <input type="text" name="name" placeholder="Име" required id="fName">
+                        </div>
+        
+                        <div class="input-container">
+                            <label for="fSurname">Фамилия</label>
+                            <input type="text" name="surname" placeholder="Фамилия" required id="fSurname">
+                        </div>
+                    </div>
+    
+                    <div class="input-group">
+                        <div class="input-container">
+                            <label for="address">Адрес</label>
+                            <input type="text" name="address" placeholder="бул. &quot;България&quot; 236" required id="address">
+                        </div>
+                        
+                        <div class="input-container">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" name="phone" placeholder="08xx-xxx-xxx" required id="phone">
+                        </div>
+                    </div>
+    
+                    <div>
+                        <label for="asking">Допълнително запитване</label>
+                        <textarea name="asking" placeholder="Допълнително запитване..."></textarea>
+                    </div>
+                    <input class="order-button" type="submit" value="Поръчай" onclick="return Validate()">
+                </form>
+            </section>
             </div>
         </div>
     </main>
@@ -92,6 +174,9 @@
                 <p>&copy; Всички права запазени</p>
             </section>
         </footer>
-</body>
 
+        <script src="https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
+        <script src="https://unpkg.com/idb-keyval@5.0.6/dist/iife/index-min.js"></script>
+        <script src="js/cart.js"></script>
+    </body>
 </html>
