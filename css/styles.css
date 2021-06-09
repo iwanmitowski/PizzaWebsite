@@ -949,6 +949,24 @@ footer p {
   font-size: 1.5em;
 }
 
+.blank-button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.button-minus, .button-plus {
+  margin: 0 10px;
+}
+
+.button-minus {
+  margin-right: 10px;
+}
+
+.button-plus {
+  margin-left: 10px;
+}
+
 .cart-product-price {
   /* color: #BE1E2D; */
   font-size: 1.1em;

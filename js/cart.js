@@ -5,6 +5,93 @@
     L: "Голяма",
   };
 
+  var reverseMap = {
+    Малка: "S",
+    Средна: "M",
+    Голяма: "L",
+  };
+
+  function attachQuantityButtons() {
+    // Since buttons are loaded async, we have to delegate the event handlers
+
+    document
+      .querySelector(".cart-table")
+      .addEventListener("click", function (e) {
+        if (!e.target.matches(".quantity-button")) {
+          return;
+        }
+
+        var target = e.target;
+        var rootElement = e.target;
+        while (rootElement.nodeName !== "TR")
+          rootElement = rootElement.parentElement;
+
+        var price = +rootElement.dataset.price;
+        var totalPriceElement = document.querySelector(".cart-total");
+        var priceElement = rootElement.querySelector(".cart-product-price");
+
+        var pizzaName =
+          rootElement.querySelector(".cart-product-name").textContent;
+
+        var isMinus = target.matches(".button-minus");
+        var quantityElement = rootElement.querySelector(
+          ".cart-product-quantity"
+        );
+        var quantity = +quantityElement.textContent;
+        var size =
+          reverseMap[
+            rootElement.querySelector(".cart-product-size").textContent
+          ];
+
+        var shouldRefresh = false;
+
+        idbKeyval.get("order").then(function (products) {
+          // Remove from idb and later refresh
+          if (isMinus && quantity === 1) {
+            products = products.filter((p) => p.name !== pizzaName);
+            shouldRefresh = true;
+          } else {
+            products = products.map((p) => {
+              if (p.name !== pizzaName || p.size !== size) return p;
+
+              var totalPrice = +totalPriceElement.textContent.slice(0, -2);
+              var subPrice = +priceElement.textContent.slice(0, -2);
+              if (isMinus) {
+                p.quantity--;
+                totalPrice -= price;
+                subPrice -= price;
+                quantity--;
+              } else {
+                p.quantity++;
+                totalPrice += price;
+                subPrice += price;
+                quantity++;
+              }
+
+              totalPriceElement.textContent = formatPrice(totalPrice);
+              priceElement.textContent = formatPrice(subPrice);
+              quantityElement.textContent = quantity;
+              return p;
+            });
+          }
+
+          idbKeyval.set("order", products).then(() => {
+            if (shouldRefresh) {
+              window.location.reload();
+            }
+
+            iziToast.success({
+              id: "success",
+              title: `Променихте количеството на пица ${pizzaName}`,
+              position: "bottomRight",
+              transitionIn: "flipInX",
+              transitionOut: "flipOutX",
+            });
+          });
+        });
+      });
+  }
+
   function setDeliveryTime() {
     var element = document.getElementById("delivery-time");
 
@@ -39,7 +126,10 @@
               })
               .catch(function () {
                 // Redirect to home page
-                window.location.href = window.location.href.replace('cart.html', '');
+                window.location.href = window.location.href.replace(
+                  "cart.html",
+                  ""
+                );
               });
           },
         });
@@ -62,6 +152,9 @@
           for (var i = 0; i < products.length; i++) {
             var product = products[i];
             var productElement = template.content.cloneNode(true);
+
+            var root = productElement.querySelector(".cart-product-row");
+            root.dataset.price = product.price;
 
             var image = productElement.querySelector(".cart-product-image");
             image.src = product.imageUrl;
@@ -101,5 +194,6 @@
     loadOrder();
     setDeliveryTime();
     onOrder();
+    attachQuantityButtons();
   });
 })();
