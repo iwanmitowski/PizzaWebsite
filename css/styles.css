@@ -974,6 +974,8 @@ footer p {
 
 .delivery-time-paragraph {
   font-size: 1.3em;
+  display: block;
+  text-align: center;
 }
 
 #delivery-time {
