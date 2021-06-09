@@ -39,7 +39,7 @@
               })
               .catch(function () {
                 // Redirect to home page
-                window.location.href = window.location.origin;
+                window.location.href = window.location.href.replace('cart.html', '');
               });
           },
         });
